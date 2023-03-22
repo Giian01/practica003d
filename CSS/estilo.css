@@ -2,7 +2,7 @@ h1 {
     text-align: center;
     background-color: rgb(207, 191, 170);
     align-items: center;
-    border-radius: 150px;
+    border-style:dotted 150px;
     border: 3px solid #eb97b9;
     padding: 20px;
     height: 35px;
