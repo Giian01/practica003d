@@ -4,40 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="CSS/estilo.css">
     <link rel="stylesheet" href="">
     <title>Gatos en adopcion</title>
 </head>
 <body>
-	<ul>
-        <li><a class="active" href="menu.html">Inicio</a></li>
-		<li><a href="MenuPerro.html">Perros</a></li>
-        <li><a href="MenuGato1.html">Gatos</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+	<nav>
+		<ul>
+			<li><a class="active" href="menu.html">Inicio</a></li>
+			<li><a href="MenuPerro.html">Perros</a></li>
+			<li><a href="MenuGato1.html">Gatos</a></li>
+			<li><a href="nosotros.html">Nosotros</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		  </ul>
+	</nav>
+    <div class="container">
+		<!---fila-->
+		<div class="row">
+			<!--columna-->
+			<div class="col-md-12" style="text-align: center;">
+				<h1 style="color: rgb(0, 0, 0);text-align: center; font-family: 'Courier New', Courier, monospace;  ">
+					GATOS EN ADOPCIÓN</h1> 
+			</div>
+		</div>
+		<div class="row" style="text-align: center;">
+			<!--columna-->
+			<div class="col-md-12 col-sm-12">
+				<p>Frente al gran abandono de animales elije adoptar de manera 
+					responsable es la mejor forma de darles una segunda oportunidad y una nueva familia. </p>
+					
+					<h2>Nuestros Gatos que buscan familia:</h2>
+
+		    </div>	
+		</div>
+		<div id="container">
+			<br><img id src="img/descarga.png" width="200" height="200" alt="Sin imagen" class="med"> 
+			<a id href="Fiona.html"> - Fiona </a>
+
+		</div>
+		<div id="container">
+			<br><img id src="img/gatos-cambian-color-pelo-hosoital-veterinario-castellon.jpg" width="200" height="200" alt="Sin imagen" class="med">
+			<a id href="Lyon.html"> - Lyon</a><br></td><br>
+		</div>
+		<div id="container">
+			<br><img id src="img/poly.jpg" width="200" height="200" alt="Sin imagen" class="med">
+		    <a id href="Logan.html"> - Logan</a><br>
+
+		</div>
+	</div>
+	
      
 
-      <center><h1>GATOS EN ADOPCIÓN</h1> </center>   <!--(centrado y letra grande)-->
-      <center><p>Frente al gran abandono de animales elije adoptar de manera responsable es la mejor forma de darles una segunda oportunidad y una nueva familia. </h6> </center>                   <!--(letra mediana)-->
-      <center><h4>Nuestros Gatos que buscan familia:</h1></center>
 		
-		<table>
-			<tr>
-				<td><img src="img/descarga.png" width="200" height="200" /></td>
-				<td><a href="Fiona.html"> - Fiona </a> <br>
-				
-			</tr>
-			<tr>
-				<br><td><img src="img/gatos-cambian-color-pelo-hosoital-veterinario-castellon.jpg" width="200" height="200" /></td>
-				<td><a href="Lyon.html"> - Lyon</a><br></td><br>
-			</tr>
-			<tr>
-				<br><td><img src="img/poly.jpg" width="200" height="200" /></td>
-				<td><a href="Logan.html"> - Logan</a><br></td>
-			</tr>
-		</table>
-
 
 		
 		
@@ -49,46 +70,18 @@
 
       
     
-      </table>  
+      
 
       
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+<!--codigo bootstrap-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+crossorigin="anonymous"></script>
 </body>
 </html> 
