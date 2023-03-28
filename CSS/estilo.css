@@ -57,7 +57,6 @@ li a:hover {
 .contenedor {
     display: flex;
     background-color: rgb(215, 151, 223);
-    padding: 25px;
     color: white;
 }
 
