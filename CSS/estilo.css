@@ -53,3 +53,14 @@ li a:hover {
 * {
     font-family: sans-serif;
 }
+
+.contenedor {
+    display: flex;
+    background-color: rgb(215, 151, 223);
+    padding: 25px;
+    color: white;
+}
+
+.text {
+    padding-left: 25px;
+}
